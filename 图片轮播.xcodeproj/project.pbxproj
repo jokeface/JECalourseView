@@ -13,6 +13,13 @@
 		3A133A211C3E154A005ECA79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A133A1F1C3E154A005ECA79 /* Main.storyboard */; };
 		3A133A231C3E154A005ECA79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A133A221C3E154A005ECA79 /* Assets.xcassets */; };
 		3A133A261C3E154A005ECA79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A133A241C3E154A005ECA79 /* LaunchScreen.storyboard */; };
+		3A4B37531CCE21AB00E569E6 /* JECalourseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B37521CCE21AB00E569E6 /* JECalourseView.m */; };
+		3A4B375B1CD0481F00E569E6 /* JECalourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B375A1CD0481F00E569E6 /* JECalourseCell.m */; };
+		3A4B37611CD09D2500E569E6 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B375C1CD09D2500E569E6 /* 0.jpg */; };
+		3A4B37621CD09D2500E569E6 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B375D1CD09D2500E569E6 /* 2.jpg */; };
+		3A4B37631CD09D2500E569E6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B375E1CD09D2500E569E6 /* 1.jpg */; };
+		3A4B37641CD09D2500E569E6 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B375F1CD09D2500E569E6 /* 4.jpg */; };
+		3A4B37651CD09D2500E569E6 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B37601CD09D2500E569E6 /* 3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,15 @@
 		3A133A221C3E154A005ECA79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A133A251C3E154A005ECA79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A133A271C3E154A005ECA79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A4B37511CCE21AB00E569E6 /* JECalourseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JECalourseView.h; sourceTree = "<group>"; };
+		3A4B37521CCE21AB00E569E6 /* JECalourseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JECalourseView.m; sourceTree = "<group>"; };
+		3A4B37591CD0481F00E569E6 /* JECalourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JECalourseCell.h; sourceTree = "<group>"; };
+		3A4B375A1CD0481F00E569E6 /* JECalourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JECalourseCell.m; sourceTree = "<group>"; };
+		3A4B375C1CD09D2500E569E6 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		3A4B375D1CD09D2500E569E6 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		3A4B375E1CD09D2500E569E6 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		3A4B375F1CD09D2500E569E6 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		3A4B37601CD09D2500E569E6 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,12 @@
 		3A133A151C3E154A005ECA79 /* 图片轮播 */ = {
 			isa = PBXGroup;
 			children = (
+				3A4B375C1CD09D2500E569E6 /* 0.jpg */,
+				3A4B375D1CD09D2500E569E6 /* 2.jpg */,
+				3A4B375E1CD09D2500E569E6 /* 1.jpg */,
+				3A4B375F1CD09D2500E569E6 /* 4.jpg */,
+				3A4B37601CD09D2500E569E6 /* 3.jpg */,
+				3A4B37541CCE21B600E569E6 /* JECalourseView */,
 				3A133A191C3E154A005ECA79 /* AppDelegate.h */,
 				3A133A1A1C3E154A005ECA79 /* AppDelegate.m */,
 				3A133A1C1C3E154A005ECA79 /* ViewController.h */,
@@ -77,6 +99,17 @@
 				3A133A171C3E154A005ECA79 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A4B37541CCE21B600E569E6 /* JECalourseView */ = {
+			isa = PBXGroup;
+			children = (
+				3A4B37511CCE21AB00E569E6 /* JECalourseView.h */,
+				3A4B37521CCE21AB00E569E6 /* JECalourseView.m */,
+				3A4B37591CD0481F00E569E6 /* JECalourseCell.h */,
+				3A4B375A1CD0481F00E569E6 /* JECalourseCell.m */,
+			);
+			name = JECalourseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +169,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4B37611CD09D2500E569E6 /* 0.jpg in Resources */,
+				3A4B37641CD09D2500E569E6 /* 4.jpg in Resources */,
 				3A133A261C3E154A005ECA79 /* LaunchScreen.storyboard in Resources */,
+				3A4B37621CD09D2500E569E6 /* 2.jpg in Resources */,
+				3A4B37631CD09D2500E569E6 /* 1.jpg in Resources */,
 				3A133A231C3E154A005ECA79 /* Assets.xcassets in Resources */,
 				3A133A211C3E154A005ECA79 /* Main.storyboard in Resources */,
+				3A4B37651CD09D2500E569E6 /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +190,8 @@
 				3A133A1E1C3E154A005ECA79 /* ViewController.m in Sources */,
 				3A133A1B1C3E154A005ECA79 /* AppDelegate.m in Sources */,
 				3A133A181C3E154A005ECA79 /* main.m in Sources */,
+				3A4B37531CCE21AB00E569E6 /* JECalourseView.m in Sources */,
+				3A4B375B1CD0481F00E569E6 /* JECalourseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +340,7 @@
 				3A133A2C1C3E154A005ECA79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
