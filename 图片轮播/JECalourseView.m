@@ -32,6 +32,8 @@
 @property(nonatomic,assign)CGRect TempOriFrame;
 @property(strong,nonatomic)NSTimer* timer;
 @property(strong,nonatomic)UIView* containerView;
+
+@property(nonatomic,assign)NSTimeInterval LastendPan;
 @end
 
 @implementation JECalourseView
@@ -123,7 +125,7 @@
 -(void)timerChange
 {
     
-    if (_Touch) {
+    if (_Touch || ([[NSDate date] timeIntervalSince1970]-_LastendPan)<8.0) {
         [_timer setFireDate:[NSDate distantFuture]];
         double delayInSeconds = 8.0f;
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
@@ -188,6 +190,8 @@
     }else if (gestureRecognizer.state==UIGestureRecognizerStateEnded)
     {
         _Touch=NO;
+        
+        _LastendPan=[[NSDate date] timeIntervalSince1970];
         [self StopAnimationWithTransforX:transPoint.x];
         
     }
